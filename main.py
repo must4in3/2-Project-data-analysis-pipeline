@@ -40,6 +40,7 @@ if __name__ == "__main__":
 
     table_player1.to_csv(r'output/all_stats_player.csv')
     table_player1_final.to_csv(r'output/resume_stats_player.csv')
+    print(pts)
 
     # TIP:
     # Check these 3 steps:
