@@ -176,8 +176,8 @@ def create_final_table_api(name):
     player1_table_api = merge_info_api(players1_name, players1_table)
     return player1_table_api
 
-def create_final_table_selenium(name):
-    table_player1 = create_selenium_player(2544)
+def create_final_table_selenium(numero):
+    table_player1 = create_selenium_player(numero)
     return table_player1
 
 df = import_dataset()
