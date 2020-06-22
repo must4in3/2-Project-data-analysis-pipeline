@@ -1,11 +1,12 @@
 from argparse import ArgumentParser
-from final.ipynb import *
+from functions import *
 
 def parser():
     # Create ArgumentParser object
     parser = ArgumentParser(description="Comparar dos players de NBA")
     # Add argument
-    parser.add_argument("names",type='string', nargs="2")
+    parser.add_argument("player1",type=str)
+    #parser.add_argument("player2",type=str)
     # Boolean Argument
     # cancel parser.add_argument("-reverse", action='store_true')
     # Group of arguments, mutually exclusive
@@ -15,6 +16,6 @@ def parser():
     # Retrieve Arguments
     args = parser.parse_args()
     # Accessing different variables in args
-    list_numbers = args.names
-
-    return list_numbers
+    player1 = args.player1
+    #player2 = args.player2
+    return player1#, player2
